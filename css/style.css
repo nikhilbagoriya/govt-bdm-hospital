@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merienda:wght@300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');    
+/********** Template CSS **********/
+:root {
+    --primary: #06A3DA;
+    --secondary: #F57E57;
+    --light: #EEF9FF;
+    --dark: #091E3E;
+    --font-family1: "Libre Baskerville", serif;
+
+}
+
+.sp-button-pe{
+    background: goldenrod;
+    width: 140px;
+    position: fixed;
+    z-index: 99999;
+    top: 50%;
+    float: right;
+}
+.sp-button-pe a{
+    margin: 4px 4px 4px 0px;
+    font-weight: 600;
+    float: right;
+    font-size: 13px;
+    font-family: var(--font-family1);
+    color: white;
+    padding: 8px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.sp-button-pe:hover a{
+    transition: 1s;
+    background-color: white;
+    border-color: #174c77;
+    color: #091E3E;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-weight-bold {
+    font-weight: 700 !important;
+    font-family: var(--font-family1);
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.btn {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-primary,
+.btn-secondary {
+    color: #FFFFFF;
+    background-color: #174c77 !important;
+}
+.foot .btn-primary{
+    background-color: white !important;
+} 
+.foot .btn-primary i{
+    color: #174c77 !important;
+}
+.btn-primary:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.gallery-img .row .col-lg-4 .team-item{
+    width: 100% !important;
+    height: auto !important;
+}
+.section-title h5{
+    color: #174c77 !important;
+}
+.service-item .position-relative.bg-primary.rounded{
+    background-color: #174c77 !important;
+}
+.topbar-sec{
+    background-image: url('/img/topbar-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    background-color: #174c77;
+}
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+.btn:hover{
+    background-color: #174c77cb !important;
+    color: white !important;
+}
+.team-item div div h6{
+    color: #174c77 !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Jost', sans-serif;
+    padding: 15px 15px;
+    font-size: 18px;
+    color: white;
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 20px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #174c77;
+    background: white;
+}
+
+.bg-offer .row .row img{
+    width: 100%;
+    height: 100px !important;
+}
+.gallery-img .row .col-lg-4 .price-item img{
+    width: 100% !important;
+    height: 350px !important;
+}
+
+@media (max-width: 1024px){
+    .sp-button-pe{
+        width: 90px;
+    }
+    .sp-button-pe-sec{
+        top: 65% !important;
+    }
+    .sp-button-pe a{
+        font-size: 8.1px !important;
+    }
+.doctor-list .col-lg-4{
+        width: 50% !important;
+    }
+}
+/* @media (max-width: 1440px){
+    .sp-button-pe-sec{
+        top: 71% !important;
+    }
+} */
+@media (max-width: 1439px){
+        .spe-img{
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+        .spe-img img{
+            width: 23%;
+        }
+        .specialities .section-title h2{
+            font-size: 23px;
+        }
+        .Doctors h1{
+            font-size: 20px !important;
+        }
+        .Doctors .section-title {
+            padding: 40px 20px !important;
+        }
+        .team-item h6{
+            font-size: 13px !important;
+        }
+        .price-carousel2 .team-item img{
+            height: 330px !important;
+        }
+       
+}
+
+
+@media (max-width: 991.98px) {
+    .sp-button-pe{
+        width: 90px;
+    }
+    .sp-button-pe a{
+        font-size: 8.2px !important;
+    }
+    .doctor-list .col-lg-4{
+        width: 50% !important;
+    }
+     .navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #F57E57;
+    background: transparent !important;
+}
+    .gallery-img .row .col-lg-4{
+        width: 50% !important;
+    }
+    .spe-img{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .spe-img img{
+        width: 23%;
+        height: 95px;
+    }
+    .carousel-item img{
+        height: 320px !important;
+    }
+    .bg-offer .row .col-lg-3,.col-lg-4{
+        width: 30% !important;
+    }
+    .Doctors .row .col-lg-4{
+        width: 100% !important;
+    }
+    .ses-sec{
+        display: none;
+    }
+    .navbar-light .navbar-nav .nav-link,
+    .sticky-top.navbar-light .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+     .navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #F57E57;
+    background: transparent !important;
+}
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(9, 30, 62, .85);
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .sp-button-pe-sec{
+        top: 61% !important;
+    }
+    .sp-button-pe{
+        width: 90px;
+    }
+    .sp-button-pe a{
+        font-size: 8.2px !important;
+    }
+    .doctor-list .col-lg-4{
+        width: 100% !important;
+    }
+    .withoutpart{
+        display: none !important;
+    }
+    .appointment-form .form-check.form-check-inline{
+        margin-left: 15px !important;
+    }
+    .navbar{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .navbar-light .navbar-toggler{
+        background-color: white;
+    }
+    .about .section-title h1,.specialities .section-title h2,.bg-appointment .col-lg-6 h1,.section-title.mb-4 h1,.service-item h3,.bg-offer .offer-text h1{
+        font-size: 20px !important;
+    }
+    .bg-appointment .col-lg-6{
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+
+    }
+    .bg-offer .row .col-lg-3, .col-lg-4{
+        width: 50% !important;
+    }
+    .bg-offer .row .row img{
+        height: 40px !important;
+    }
+    .about .col-lg-7 h4{
+        font-size: 18px !important;
+    }
+    .about .col-lg-7 p,.specialities p,.bg-appointment .col-lg-6 p,.service-item h4,.service-item h2{
+        font-size: 14px !important;
+        text-align: justify;
+    }
+    .about .col-lg-7 .col-sm-6 h5,.specialities .col-lg-5 h5,.specialities .col-lg-5 h1{
+        font-size: 13px !important;
+        text-align: justify;
+    }
+    .team-text h4{
+        font-size: 18px !important;
+    }
+    .team-text p{
+        font-size: 15px !important;
+    }
+    .specialities .col-lg-7 .price-item h4{
+        font-size: 16px !important;
+    }
+    .about .col-lg-7 .col-sm-6{
+        margin-top: 0px !important;         
+    }
+    .about .col-lg-7 a{
+        padding: 0.5rem 1.5rem !important;
+    }
+    .carousel-caption h5 {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+    .price-carousel .owl-item .price-item .position-relative.text-center.bg-light.border-bottom.border-primary.py-5.p-4{
+        padding: 20px !important;
+    }
+    .price-carousel .owl-item .price-item .position-relative.text-center.bg-light.border-bottom.border-primary.py-5.p-4 span{
+        font-size: 13px !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+    .center-div{
+        display: none;
+    }
+    .spe-img{
+        padding-left:0px !important;
+        padding-right:0px !important;
+    }
+    .spe-img img{
+        width: 23%;
+        height: 95px;
+    }
+    .top-bar{
+        padding-top: 5px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .top-bar-con img{
+        height: 50px;
+    }
+    .carousel-item img{
+        height: 320px !important;
+    }
+    .banner,.banner .container,.bg-offer{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .banner .ope{
+        font-size: 19px !important;
+    }
+    .banner .justify-content-between h6{
+        font-size: 13px !important;
+    }
+    .bg-testimonial p{
+        font-size: 13px !important;
+    }
+    .about,.Doctors{
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    .specialities{
+        padding-bottom: 0px !important;
+    }
+    .bg-appointment{
+        margin-top: 0px !important;
+    }
+    .bg-appointment .sec{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .bg-appointment .sec div{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .sec-btn-doc{
+        display: block !important;
+    }
+    .ses-sec{
+        display: none;
+    }
+    .fir-btn-doc{
+        display: none;
+    }
+    .gallery-img .row .col-lg-4{
+        width: 100% !important;
+    }
+     .navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #F57E57;
+    background: transparent !important;
+}
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media (min-width: 991.98px) {
+    .banner {
+        position: relative;
+        z-index: 1;
+        background-color: #174c77;
+    }
+}
+
+.section-title h5::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 3px;
+    right: -55px;
+    bottom: 11px;
+    background: #174c77;
+}
+.about .col-sm-6 h5 i{
+    color: #174c77;
+}
+.about a{
+    background-color: #174c77;
+    color: white;
+}
+.specialities h5,h1 a{
+    color: #174c77;
+}
+
+.section-title h5::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 3px;
+    right: -75px;
+    bottom: 11px;
+    background: #174c77;
+}
+.banner{
+    background-color: #174c77 !important;
+}
+.twentytwenty-wrapper {
+    height: 100%;
+}
+
+.hero-header {
+    background: linear-gradient(rgba(9, 30, 62, 0.671), rgba(9, 30, 62, 0.652)), url(../img/dis_bdm_hospital_kotputli\ \(5\).jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+.bg-appointment {
+    background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url(../img/bdm_hospital_kotputli_gallery3.jpg) center center no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-appointment .col-lg-6 p{
+    text-align: justify;
+}
+
+.appointment-form {
+    background: #174c77;
+}
+.appointment-form h6{
+    font-size: 15px !important;
+}
+
+.service-item img,
+.service-item .bg-light,
+.service-item .bg-light h5,
+.team-item .team-text {
+    transition: .5s;
+}
+.team-item .team-text{
+    height: 125px;
+}
+.team-item .team-text p{
+    color: #174c77 !important;
+}
+.fa-check-circle:before{
+    color: #174c77 !important;
+}
+.service-item img{
+    width: 100%;
+    height: 250px !important;
+}
+
+.service-item:hover img {
+    transform: scale(1.15);
+}
+
+.team-item .team-text::after,
+.service-item .bg-light::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    border-radius:100px / 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .7);
+    opacity: 0;
+    transition: .5s;
+    z-index: -1;
+}
+
+.owl-carousel .owl-item img{
+    width: 100%;
+    height: 250px;
+}
+.specialities .col-lg-5 p{
+    text-align: justify;
+}
+.specialities .col-lg-7 .price-item h4{
+    font-size: 20px ;
+}
+
+.price-carousel2 .team-item img{
+    height: 370px;
+}
+
+.price-carousel2 .owl-nav{
+    display: none;
+}
+
+.team-item:hover .team-text::after,
+.service-item:hover .bg-light::after {
+    opacity: 1;
+}
+
+.bg-offer {
+    background:url(../img/bdm_hospital_kotputli_gallery5.avif) center center no-repeat;
+    background-size: cover;
+}
+
+.offer-text {
+    background: #174c77;
+}
+
+.price-carousel .owl-nav {
+    position: absolute;
+    width: calc(100% + 45px);
+    height: 45px;
+    top: calc(50% - 22.5px);
+    left: -22.5px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transition: .5s;
+}
+
+.price-carousel .owl-nav {
+    opacity: 1;
+}
+
+.price-carousel .owl-nav .owl-prev,
+.price-carousel .owl-nav .owl-next {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: #174c77;
+    border-radius: 2px;
+    font-size: 22px;
+    transition: .5s;
+}
+.fa-check:before{
+    color: #174c77 !important;
+}
+.price-carousel .owl-nav .owl-prev:hover,
+.price-carousel .owl-nav .owl-next:hover {
+    background: var(--secondary);
+}
+
+.bg-testimonial {
+    background: url(../img/bdm_hospital_kotputli_bg-testimonial.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+.testimonial-carousel {
+    background: #174c77b8;
+}
+
+.testimonial-carousel .owl-nav {
+    position: absolute;
+    width: calc(100% + 46px);
+    height: 46px;
+    top: calc(50% - 23px);
+    left: -23px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: #174c77b8;
+    border-radius: 2px;
+    font-size: 22px;
+    transition: .5s;
+}
+.foot{
+    background-color: #174c77;
+}
+.foot i{
+    color: white !important;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    background: var(--secondary);
+}
+
+.testimonial-carousel .owl-item img {
+    width: 120px;
+    height: 120px;
+}
